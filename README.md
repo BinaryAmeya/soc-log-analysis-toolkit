@@ -1,98 +1,77 @@
-\# SOC-Style Security Log Analysis Toolkit
+# SOC Log Analysis Toolkit
 
+## Overview
+This project focuses on **security log analysis as performed in real Security Operations Centers (SOC)**.
 
+It is designed to help understand how raw logs are transformed into **security insights**, **alerts**, and **investigation findings**.
 
-\## Overview
-
-This project demonstrates a Security Operations Center (SOC) style approach
-
-to analyzing authentication logs and detecting suspicious login behavior
-
-using rule-based anomaly detection.
-
-
-
-The focus is on analyst thinking, log interpretation, and clear reporting
-
-rather than tool-heavy automation.
-
-
+This is a **defensive security project**, not an offensive or exploit-based one.
 
 ---
 
+## Problem Statement
+In real-world environments, security incidents are rarely detected by tools alone.
+They are detected by **analysts interpreting logs**.
 
+However, many learners:
+- Do not understand log structure
+- Do not know what “normal” looks like
+- Cannot extract meaningful signals from raw data
 
-\## Problem Statement
-
-Organizations generate large volumes of authentication logs daily.
-
-Manually identifying malicious login activity such as brute-force attacks
-
-is inefficient and error-prone. Automated log analysis is essential for
-
-early threat detection.
-
-
+This project addresses that gap.
 
 ---
 
-
-
-\## Detection Approach
-
-The project implements the following detection techniques:
-
-
-
-\- Analysis of failed vs successful login attempts
-
-\- Time-window based correlation of authentication failures
-
-\- IP and username relationship analysis
-
-\- Severity classification based on frequency of failures
-
-\- Identification of potential brute-force behavior
-
-
+## What This Project Covers
+- Parsing structured and semi-structured logs
+- Filtering noisy events
+- Identifying suspicious patterns
+- Basic anomaly identification
+- Analyst-style reasoning over data
 
 ---
 
-
-
-\## Data Source
-
-Synthetic authentication logs modeled after real-world Windows/Linux
-
-login events. The dataset includes realistic timestamps, usernames,
-
-IP addresses, and authentication outcomes.
-
-
+## Typical Use Case
 
 ---
 
-
-
-\## Tools \& Technologies
-
-\- Python
-
-\- Pandas
-
-\- Matplotlib
-
-\- Jupyter Notebook
-
-\- Git \& GitHub
-
-
+## Technologies & Concepts
+- Python
+- Log parsing
+- Data analysis
+- Pattern recognition
+- Security operations workflows
 
 ---
 
+## What This Project Is NOT
+- Not a SIEM replacement
+- Not real-time monitoring
+- Not malware or attack code
 
+---
 
-\## Project Structure
+## Intended Audience
+- SOC Analysts (entry-level)
+- Blue Team Engineers
+- Cybersecurity students preparing for internships
 
+---
 
+## Limitations
+- Offline analysis only
+- Sample datasets
+- Detection logic is illustrative
 
+---
+
+## Future Improvements
+- SIEM integration
+- Visualization dashboards
+- Advanced correlation logic
+- Machine learning support
+
+---
+
+## License
+MIT License
